@@ -1,0 +1,175 @@
+body{
+    background-image: url('./img/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 30vh;
+    width: auto;
+    position: absolute;
+ 
+}
+.container{
+    position: absolute;
+    width: 375px;
+    height: 712px;
+    border-radius: 20px;
+    background-image: url('./img/moedas.jpg');
+    margin: 16px 0 20px 38%;
+
+}
+
+.de{
+    margin: 0px 0 0 24px;
+    padding-top: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+}
+
+#moeda1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555;
+    appearance: none;
+    padding-left: 10px;
+}
+
+.para{
+    margin: 24px 0 0 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+}
+
+#moeda2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555; 
+    appearance: none;
+    padding-left: 10px;
+
+}
+
+.valor{
+    margin: 24px 0 0 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+    
+}
+
+#valor1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555; 
+    padding-left: 10px;
+}
+
+.converter{
+    margin: 23px 0 0 24px;
+    height: 48px;
+    width: 327px;
+    background: #772FD3;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 #00000025;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.converter:hover{
+    opacity: .8;
+}
+.converter:active{
+    opacity: .4;
+}
+#moeda1, #moeda2{
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+#valor1{
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+    box-shadow: 2px 2px 5px 0 #00000015;
+}
+.caixa_resultado{
+    width: 327px;
+    height: 276px;
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+    margin: 36px 0 0 24px;
+    background: #F4F4F4A9;
+
+}
+.caixa_valores{
+    width: 127px;
+    height: 251px;
+    margin: 12px 0 0 100px;
+    text-align: center;
+
+
+}
+.moeda1_img{
+    height: 44px;
+    width: 44px;
+
+}
+.moeda2_img{
+    height: 44px;
+    width: 44px;
+}
+#moeda1_nome, #moeda2_nome{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+}
+.seta{
+    width: 35px;
+    height: 49.94px;
+    margin: 15px 0 13px 0;
+}
+.moeda1_valor, .moeda2_valor{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: #555555;
+}
+
+@media screen and (max-width: 500px) {
+    .logo{
+        display: none;
+    }
+    
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+    }
+}
