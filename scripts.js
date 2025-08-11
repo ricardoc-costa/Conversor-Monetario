@@ -1,7 +1,7 @@
 const convertButton = document.querySelector(".converter")
 
 
-function convertRD(){
+async function convertRD(){
     const entry = document.querySelector("#moeda1")
     const output = document.querySelector("#moeda2")
     const moeda1Nome = document.querySelector("#moeda1_nome")
@@ -12,11 +12,13 @@ function convertRD(){
     const moeda1Img = document.querySelector(".moeda1_img")
     const moeda2Img = document.querySelector(".moeda2_img")
 
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL").then(response => response.json())
+
     const realToday = 1
-    const dolarToday = 5
-    const euroToday = 6
-    const libraToday = 7
-    const bitcoinToday = 200000
+    const dolarToday = data.USDBRL.high
+    const euroToday = data.EURBRL.high
+    const libraToday = data.GBPBRL.high
+    const bitcoinToday = data.BTCBRL.high
 
     
     moeda1Nome.innerHTML = entry.value
