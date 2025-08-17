@@ -20,16 +20,19 @@ body{
 }
 .container{
     position: absolute;
+    left: 40%;
+    top: 2%;
     width: 375px;
     height: 712px;
     border-radius: 20px;
     background-image: url('./img/moedas.jpg');
-    margin: 16px 0 20px 38%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .de{
-    margin: 0px 0 0 24px;
     padding-top: 44px;
     font-weight: 400;
     font-size: 14px;
@@ -47,7 +50,6 @@ body{
 }
 
 .para{
-    margin: 24px 0 0 24px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -65,7 +67,6 @@ body{
 }
 
 .valor{
-    margin: 24px 0 0 24px;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -82,7 +83,6 @@ body{
 }
 
 .converter{
-    margin: 23px 0 0 24px;
     height: 48px;
     width: 327px;
     background: #772FD3;
@@ -122,14 +122,15 @@ body{
     height: 276px;
     border-radius: 20px;
     border: 1px solid #772FD3;
-    margin: 36px 0 0 24px;
     background: #F4F4F4A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .caixa_valores{
     width: 127px;
     height: 251px;
-    margin: 12px 0 0 100px;
     text-align: center;
 
 
